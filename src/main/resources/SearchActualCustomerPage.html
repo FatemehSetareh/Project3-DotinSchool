@@ -43,14 +43,14 @@
 
 <p>Search Using These Fields </p>
 
-<form action="" method="post">
-    <input type="text" value="First Name: ">
+<form action="servlet/ActualCustomerInformation" method="post">
+    <input type="text" name="firstName" onfocus="if(this.value == 'First Name') { this.value = ''; }" value="First Name">
     <br>
-    <input type="text" value="Last Name: ">
+    <input type="text" name="lastName" onfocus="if(this.value == 'Last Name') { this.value = ''; }" value="Last Name">
     <br>
-    <input type="text" value="National Code: ">
+    <input type="text" name="nationalCode" onfocus="if(this.value == 'National Code') { this.value = ''; }" value="National Code">
     <br>
-    <input type="text" value="Customer Number: ">
+    <input type="text" name="customerNumber" onfocus="if(this.value == 'customerNumber') { this.value = ''; }" value="customerNumber">
     <br>
     <input type="submit" value="Search">
 </form>
