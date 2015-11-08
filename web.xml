@@ -1,0 +1,25 @@
+<web-app>
+
+    <servlet>
+        <servlet-name>RegisterActualCustomer</servlet-name>
+        <servlet-class>RegisterActualCustomer</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RegisterCorporateCustomer</servlet-name>
+        <servlet-class>RegisterCorporateCustomer</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>RegisterActualCustomer</servlet-name>
+        <url-pattern>/servlet/RegisterActualCustomer</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegisterCorporateCustomer</servlet-name>
+        <url-pattern>/servlet/RegisterCorporateCustomer</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>RegisterActualCustomerPage.html</welcome-file>
+    </welcome-file-list>
+
+</web-app>
